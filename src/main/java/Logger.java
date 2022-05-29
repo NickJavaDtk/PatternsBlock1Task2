@@ -14,13 +14,13 @@ public class Logger {
 
     public static Logger getInstance() {
         if (logger == null) {
-            logger = new Logger();
+            logger = new Logger( );
         }
-            return logger;
+        return logger;
 
     }
 
     public void log(String msg) {
-        System.out.println(new Date(System.currentTimeMillis()) + " [" + num++ + "] " + msg);
+        System.out.println(new Date(System.currentTimeMillis( )) + " [" + num++ + "] " + msg);
     }
 }
